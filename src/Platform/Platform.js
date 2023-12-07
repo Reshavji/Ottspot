@@ -1,8 +1,11 @@
 import React from 'react'
+import Slider from '../Slider/Slider'
 
 const Platform = () => {
   return (
-    <div>Platform</div>
+    <div className='platform'>
+        <Slider />
+    </div>
   )
 }
 

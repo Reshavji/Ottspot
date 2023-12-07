@@ -1,14 +1,19 @@
-/* Existing header styles */
 .header {
-    background-color: #1c1d1f;
-    height: 80px;
-    padding: 0px 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  background-color: #1c1d1f;
+  height: 80px;
+  padding: 0px 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 100;
+}
+
   
   .app-logo {
     position: relative;
@@ -37,7 +42,7 @@
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     white-space: nowrap; /* Prevent text wrapping */
   }
   

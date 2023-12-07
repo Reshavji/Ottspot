@@ -17,12 +17,7 @@ function Slider() {
     'https://www.koimoi.com/wp-content/new-galleries/2023/04/the-kapil-sharma-show-is-going-to-end-very-soon-once-again-are-makers-pulling-the-plug-of-the-comedy-show-01.jpg',
     'https://wallpapers.com/images/featured/the-boys-1fe3hnl120ch1bc6.jpg',
   ];
-  const imageText =[
-    'Next Generation Of OTT Platform 1',
-    'Next Generation Of OTT Platform 2',
-    'Next Generation Of OTT Platform 3 ',
-    'Next Generation Of OTT Platform 4'
-  ]
+
 
   const slideRight = () => {
     setScrolling(false);

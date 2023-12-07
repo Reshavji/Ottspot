@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import logo from "../Images/Ottspot.png"
 import './Header.css';
 const Header = () => {
@@ -8,8 +9,8 @@ const Header = () => {
         <div className='navbar'>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Platforms</li>
+                    <Link to ="/"><li>Home</li></Link>
+                    <Link to="/platforms"><li>Platforms</li></Link>
                     <li>Services</li>
                     <li>Support & FAQ</li>
                     <li>Contact Us</li>

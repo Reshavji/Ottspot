@@ -8,13 +8,18 @@
 }
 .main-txt{
     position: absolute;
-    color: whitesmoke;
+    color: rgba(0,0,0,0);
     display: flex;
+    padding: 0px 250px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+strong{
+    color: rgb(243, 207, 5);
+}
 .top-head{
+    color: whitesmoke;
     font-size: 1.125rem;
     font-weight: 600;
     padding: 20px 0;
@@ -25,7 +30,20 @@
     letter-spacing: .9px;
    }
 .main-head{
-    font-size: 5rem;
+    display: flex;
+    position: relative;
+    top: -40px;
+    font-size: 5.2rem;
+    -webkit-background-clip: text;
+    background-image: url('https://templates.iqonic.design/streamit/intro/assets/images/texure.webp');
+}
+.last-head{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+    top:-100px;
 }
 #banner{
     top:-100px;

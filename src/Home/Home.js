@@ -9,6 +9,7 @@ const Home = () => {
           <span className='top-head'>Next Generation Of OTT Platform</span>
         <h1 className='main-head'>Streamit Your Custom<br></br>
          OTT Platform Creator</h1> 
+         <p className='last-head'>Discover unbeatable discounts on top OTT platforms at <strong>Ottspot</strong>. Elevate your entertainment experience while saving big on subscriptions!</p>
         </div>
       <img id='banner' src={Banner} alt='Banner' />
       </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import './Slider.css';
 
 function Slider() {
@@ -9,23 +9,29 @@ function Slider() {
   const [scrolling, setScrolling] = useState(true);
 
   const imageUrls = [
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/Star_5_12_DSC_6998_desktop_563b34ba45.jpg',
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/Mission_launches_47d27b48e1.jpg',
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/PSN_Satria_curbh_DSC_2969_desktop_b183afee3c.jpg',
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/Star5_11_Star5_11_DSC_6815_desktop_3ed52beef0.jpg',
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/LAUNCH_CRS_27_Desktop_6d7404f50b.png',
-    'https://sxcontent9668.azureedge.us/cms-assets/assets/MISSION_LAUNCH_desktop_46ec0834ce.jpg',
-    'https://www.spacex.com/static/images/backgrounds-2021/sl4-3/post-launch/Starlink4-3_desktop_launches.jpg',
+    'https://m.media-amazon.com/images/S/pv-target-images/a87d06544ac25a6f4819448b4229de088571a102b511b0bae80493da9bf8e01f.jpg',
+    'https://images.ottplay.com/images/3d09e75def807f526d484e416e4543a0.jpg',
+    'https://wallpapercave.com/wp/wp12176675.jpg',
+    'https://cutewallpaper.org/22/money-heist-season-1-wallpapers/83735611.jpg',
+    'https://i.ytimg.com/vi/sTJfJoaZrCw/maxresdefault.jpg',
+    'https://www.koimoi.com/wp-content/new-galleries/2023/04/the-kapil-sharma-show-is-going-to-end-very-soon-once-again-are-makers-pulling-the-plug-of-the-comedy-show-01.jpg',
+    'https://wallpapers.com/images/featured/the-boys-1fe3hnl120ch1bc6.jpg',
   ];
+  const imageText =[
+    'Next Generation Of OTT Platform 1',
+    'Next Generation Of OTT Platform 2',
+    'Next Generation Of OTT Platform 3 ',
+    'Next Generation Of OTT Platform 4'
+  ]
 
   const slideRight = () => {
     setScrolling(false);
-    elementRef.current.scrollLeft += 500;
+    elementRef.current.scrollLeft += 1000;
   };
 
   const slideLeft = () => {
     setScrolling(false);
-    elementRef.current.scrollLeft -= 500;
+    elementRef.current.scrollLeft -= 1500;
   };
 
   useEffect(() => {
@@ -44,7 +50,7 @@ function Slider() {
 
   return (
     <div className="slider-container">
-      <ArrowBackIosIcon fontSize="large"
+      <ArrowBackIosNewIcon fontSize="large"
         onClick={slideLeft}
         className="slider-icon left"
       />
@@ -65,8 +71,9 @@ function Slider() {
             alt={`${index}`}
             className='w-[110px] md:w-[200px] rounded-lg
             hover:border-[3px] border-gray-400 cursor-pointer
-            hover:scale-110 transition-all duration-150 ease-in'
+            hover:scale-110 transition-all duration-150 ease-in slide-img'
           />
+
         ))}
       </div>
 

@@ -1,26 +1,32 @@
 /* Slider.css */
 
+/* Ensure the slider-container takes up the full width and 80% of the viewport height */
 .slider-container {
     position: relative;
     overflow: hidden; /* Hide the horizontal overflow */
+    width: 100%;
+    height: 80vh; /* Adjust the height as needed */
   }
   
+  /* Adjustments for the image container */
   .image-container {
     display: flex;
-    gap: 2rem;
-    scroll-behavior: smooth;
-    padding: 1rem 0.75rem;
     overflow-x: auto;
-    width: 100%; 
+    width: 100%;
+    height: 100%;
   }
   
+  /* Hide the scrollbar */
   .image-container::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+    display: none;
   }
+  
+  /* Font size adjustments for the icons */
   .MuiSvgIcon-fontSizeLarge {
     font-size: 4rem !important;
   }
   
+  /* Styles for the slider icons */
   .slider-icon {
     font-size: 50px;
     padding: 10px;
@@ -31,6 +37,13 @@
     transform: translateY(-50%);
   }
   
+  .slide-img {
+    width: 100%;
+    height: auto; /* Ensure the image height adjusts proportionally */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+  
+  /* Position adjustments for left and right icons */
   .left {
     left: 0;
   }
@@ -39,8 +52,3 @@
     right: 0;
   }
   
-  img {
-    height: 350px;
-    width: 100%; 
-    border-radius: 10px;
-  }

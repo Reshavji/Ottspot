@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Platform from './Platform/Platform';
 import Home from './Home/Home';
 import './App.css';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Route path='/platforms' element={<Platform />} />
     <Route path='*' element={<Home />} />
 </Routes>
+<Footer />
     </div>
   );
 }

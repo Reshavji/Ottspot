@@ -1,14 +1,16 @@
-.header{
+/* Existing header styles */
+.header {
     background-color: #1c1d1f;
     height: 80px;
     padding: 0px 30px;
-display: flex;
-flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-}
-.app-logo{
+  }
+  
+  .app-logo {
     position: relative;
     top: 0;
     display: flex;
@@ -16,8 +18,68 @@ flex-wrap: nowrap;
     padding: 0px 10px;
     left: 0;
     height: 70px;
-    width: 100%;
-}
-#logo{
+    width: 50%;
+  }
+  
+  #logo {
     height: 180px;
-}
+  }
+  .navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Basic CSS for Navbar */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  nav ul li {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  nav ul li:hover {
+   color: red;
+  }
+  
+  /* Active state for Navbar */
+  nav ul li.active {
+    background-color: #555;
+  }
+  .purchase-button{
+    padding: 15px;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    background-color: #e50914;
+  }
+
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      padding: 12px 0;
+      border-bottom: 1px solid #555;
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+    nav ul li:last-child {
+      border-bottom: none;
+    }
+  }
+  

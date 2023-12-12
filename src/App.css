@@ -1,3 +1,18 @@
 a{
     text-decoration: none;
 }
+/* Track */
+::-webkit-scrollbar {
+    width: 8px; /* Set width of the scrollbar */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #474747; /* Color of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #373636; /* Change color on hover */
+  }
+  

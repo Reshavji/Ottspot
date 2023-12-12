@@ -18,8 +18,8 @@ const Home = () => {
         <img src={Pride} alt='pride' />
         <span className='details-head'>Style Crafted By A Proficient Reshav ji
 </span>
-<p className='details-sec'>We Take Great Pride In Being A Part Of The Envato Power Elite Club. We Have Been Developing
-Themes Since 2017 And Have Established Ourselves As An Experienced <strong>Ottspot</strong>.</p>
+<p className='details-sec'>We Take Great Pride In Being A Part Of The Badsha OTT Services. We Have Been providing
+services Since 2017 And Have Established Ourselves As An Experienced <strong>Ottspot</strong>.</p>
 <span className='details-last'>Trusted By <span id='customer'>32000+ </span> Happy Customers</span>
       </div>
     </div>

@@ -13,6 +13,10 @@
   overflow: hidden;
   z-index: 100;
 }
+.header.black {
+  background-color: black;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
 
   
   .app-logo {

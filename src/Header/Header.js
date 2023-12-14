@@ -25,7 +25,7 @@ const Header = () => {
         </Link>
       </div>
       <div className='navbar'>
-        <nav className={isMenuOpen ? 'active' : ''}>
+        <nav className='active'>
           <ul>
             <Link to="/"><li>Home</li></Link>
             <Link to="/platforms"><li>Platforms</li></Link>

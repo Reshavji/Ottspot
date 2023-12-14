@@ -4,12 +4,6 @@ import logo from "../Images/Ottspot.png"
 import './Header.css';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Function to toggle the menu state
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   // Add scroll event listener to change header color on scroll
   window.addEventListener('scroll', function() {
@@ -41,9 +35,6 @@ const Header = () => {
           </ul>
         </nav>
         <button className='purchase-button'>Purchase Now</button>
-        <div className="menu-toggle" onClick={toggleMenu}>
-          <div className={isMenuOpen ? 'hamburger open' : 'hamburger'}></div>
-        </div>
       </div>
     </div>
   )

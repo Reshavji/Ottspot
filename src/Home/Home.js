@@ -22,6 +22,9 @@ const Home = () => {
 services Since 2017 And Have Established Ourselves As An Experienced <strong>Ottspot</strong>.</p>
 <span className='details-last'>Trusted By <span id='customer'>32000+ </span> Happy Customers</span>
       </div>
+      <div className="benifits">
+        <p className='ben-head'>Benifits for you</p>
+      </div>
     </div>
   )
 }
